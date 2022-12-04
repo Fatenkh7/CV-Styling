@@ -1,0 +1,159 @@
+.content{
+display: flex;
+flex-wrap: wrap;
+gap: 2%;
+
+}
+#about, #competencies, #experiences, #education{
+    width: 49%;
+}
+header> div{
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 25%;
+}
+hgroup{
+    justify-content: left;
+    color: red;
+}
+figure{
+   display: inline;
+}
+#contact>h3{
+    display: none;
+}
+#contact{
+margin-bottom: 300px;
+position: absolute;
+margin-top: 14px;
+  top: 0px;
+  right: 0px;
+  width: 50%;
+  height: 206px;
+}
+
+#contact .contact{
+    background-color: black;
+    padding: 0;
+    margin: auto;
+}
+.contact {
+    display: flex;
+    padding:40px 75px ;
+    background-color: white;
+    padding-bottom: 20px;
+}
+.contact-type{
+    width: 150px;
+    background-color: red;
+    color: white;
+    padding: 2px ;
+    margin: 0;
+}
+.contact-value>a{
+    margin-left: 0;
+    color: red;
+    text-decoration: none;
+}
+.skill[data-skill="5"] span {
+    width: 50%;
+    background-color: red;
+    color: white;
+    display: inline-block;
+}
+
+.skill[data-skill="3"] span {
+    width: 30%;
+    background-color: red;
+    color: white;
+    display: inline-block;
+}
+
+.skill[data-skill="1"] span {
+    width: 3.3%;
+    background-color: red;
+    color: white;
+    display: inline-block;
+}
+
+.skill[data-skill="9"] span {
+    width: 90%;
+    background-color: red;
+    color: white;
+    display: inline-block;
+}
+
+.skill[data-skill="7"] span {
+    width: 70%;
+    background-color: red;
+    color: white;
+    display: inline-block;
+}
+
+div.skill {
+    background-color: lightgrey;
+    margin: 3px;
+    padding: 5px;
+}
+
+.skills-primary, .skills-secondary {
+    padding-top: 15px;
+}
+
+.skills-primary::before {
+    content: "Main";
+    top: 0;
+    left: 0;
+
+}
+.skills-s
+econdary::before {
+    content: "Other";
+    top: 0;
+    left: 0;
+}
+
+.experience-details{
+        color: lightblue;
+}
+.main-other{
+    font-size: 30px;
+}
+h4, hgroup, .experience-date-separator{
+    color: red;
+}
+section>h3{
+    position: relative;
+    padding-left: 30px;
+    border-bottom: 1px solid lightblue;
+  }
+  h3::before{
+    content: " ";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    top: -2px;
+  left: 0;
+  }
+@media only screen and (max-width: 700px) {
+    /* For mobile phones: */
+    #about, #competencies, #experiences, #education, #contact{
+      width: 100%;
+      padding-left: 8px;
+      flex-direction: column;
+    }
+    #contact{
+        position: relative;
+        margin-bottom: 13px;
+    }
+    header> div{
+        flex-direction: column;
+    }
+    #contact .contact{
+        background-color: white;
+    }
+}
