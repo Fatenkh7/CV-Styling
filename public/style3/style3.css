@@ -3,7 +3,7 @@ img{
     height: 150px;
     position: relative;
     left:90%;
-    bottom:150px;
+    bottom:110px;
 }
 .msg a:hover { 
     background: #266400;
@@ -138,10 +138,32 @@ p.about-me span {
     margin-bottom: 6px; 
 }
 .prof2 .about{
-    width:80%;
+    width:100%;
 }
 .prof2 div.first{
     width:12%;
 }
-
+.profile, h1, h2, h3{
+    background-color: rgb(39, 121, 117);
+    color: white;
+}
+@media only screen and (max-width: 710px) {
+    /* For mobile phones: */
+    body{
+        width: 100%;
+    }
+    img{
+        position: relative;
+        bottom: 10px;
+        left:50px;
+    }
+    .about-me{
+        position: relative;
+        width: 100%;
+    }
+    .contact-info{
+        position: relative;
+        width: min-content;
+    }
+}
 
