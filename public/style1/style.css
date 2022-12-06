@@ -21,6 +21,10 @@ hgroup{
 figure{
    display: inline;
 }
+img{
+    width: 110px;
+    height: 110px;
+}
 #contact>h3{
     display: none;
 }
